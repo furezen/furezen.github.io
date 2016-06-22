@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/jquery-ui.min.css" />
+  <link rel="stylesheet" href="css/jquery-ui.theme.min.css" />
+  <style>
+	#sort-container li{width:150px;border:1px solid black;list-style:none;margin:10px;padding:5px;}
+  </style>
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script>
+	$(document).ready(function(){
+		$("#sort-container").sortable({
+			opacity:0.5,
+			cursor:'move',
+			axis:"x,y"
+		});
+	});
+  </script>
+ </head>
+ <body>
+	<ul id="sort-container">
+		<li>John</li>
+		<li>Paul</li>
+		<li>Koma</li>
+		<li>Jimmy</li>
+		<li>Kobe</li>
+		<li>Peter</li>
+	</ul>
+ </body>
+</html>

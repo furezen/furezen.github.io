@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<script src="js/jquery-1.4.4.min.js"></script>
+		<script src="js/jquery.ztree.core-3.5.js"></script>
+		<script src="js/jquery.ztree.excheck-3.5.js"></script>
+		<link rel="stylesheet" href="css/zTreeStyle.css" />
+		
+		<script>
+			var settings = {
+				view:{
+					dbClickExpand:false,
+					showLine:true,
+					selectedMulti:true
+				},
+				data:{
+					simpleData:{
+						enable:true,
+						idKey:"id",
+						pIdKey:"pId",
+						rootId:""
+					}
+				},
+				callback:{
+					beforeClick:function(treeId,treeNode){
+						console.log(treeNode);
+					}
+				},
+				check:{
+					enable:true,
+					chkboxType:{"Y":"ps","N":"ps"}
+				}
+			}
+			
+			var zNodes = [
+				{id:10,pId:0,name:"北京",open:true,isParent:true},
+				{id:20,pId:0,name:"上海"},
+				{id:30,pId:0,name:"重庆"},
+				{id:40,pId:0,name:"天津"},
+				{id:50,pId:0,name:"黑龙江"},
+				{id:60,pId:0,name:"吉林"},
+				{id:501,pId:50,name:"哈尔滨"},
+				{id:502,pId:50,name:"齐齐哈尔"},
+				{id:503,pId:50,name:"牡丹江"},
+				{id:504,pId:50,name:"大庆"},
+				{id:601,pId:60,name:"长春"},
+				{id:602,pId:60,name:"吉林"},
+				{id:603,pId:60,name:"四平"},
+				{id:604,pId:60,name:"白山"},
+				{id:70,pId:0,name:"西方国家"},
+				{id:701,pId:70,name:"华莱士"},
+				{id:702,pId:70,name:"张宝华"},
+				{id:703,pId:70,name:"董先生"},
+				{id:704,pId:70,name:"没有要钦定"},
+				{id:705,pId:70,name:"一个微小的列表"},
+
+			];
+			
+			$(document).ready(function(){
+				var t = $("#tree");
+				t = $.fn.zTree.init(t,settings,zNodes);
+				var ztree=$.fn.zTree.getZTreeObj("tree");
+			});
+		</script>
+	</head>
+
+	<body>
+		<ul id="tree" class="ztree"></ul>
+	</body>
+</html>

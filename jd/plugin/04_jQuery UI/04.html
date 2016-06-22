@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/jquery-ui.min.css" />
+  <link rel="stylesheet" href="css/jquery-ui.theme.min.css" />
+  <style>
+	#myDiv{width:100px;height:100px;border:1px solid red;}
+  </style>
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script>
+	$(document).ready(function(){
+		
+		$("#myDialog").dialog({autoOpen:false});
+
+		$("input[type=button]").click(function(){
+			$("#myDialog").dialog("open");
+		});
+	});
+  </script>
+ </head>
+ <body>
+	<div id="myDialog" title="My Base Dialog">
+		This is my Dialog
+	</div>
+	<input type="button" value="Open Dialog" />
+ </body>
+</html>

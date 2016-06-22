@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/jquery-ui.min.css" />
+  <link rel="stylesheet" href="css/jquery-ui.theme.min.css" />
+  <style>
+	#myDiv,#nextDiv{width:100px;height:100px;background:red;border:1px solid black;}	 
+	#nextDiv{display:none;}
+  </style>
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script>
+	$(document).ready(function(){
+		$("#myDiv").click(function(){
+			//执行动画效果
+			//$(this).animate({backgroundColor:"#00ff00",color:"#0000ff",borderBottomColor:"red"});
+			//通过exlode特效隐藏当前元素
+			$(this).hide("explode");
+		});
+	});
+  </script>
+ </head>
+ <body>
+	<div id="myDiv"><img src="180.png" style="width: 100px;"></div>
+	<div id="nextDiv"></div>
+ </body>
+</html>
