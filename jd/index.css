@@ -265,33 +265,33 @@ div.sub_cate_box {
     	background-position:-10px 0px;
 }
 li.pinpaijie {
-	background-image:url(images/index/show_01.jpg);
+	background-image:url(Images/index/show_01.jpg);
 }
 li.dijia {
-	background-image:url(images/index/show_02.jpg);
+	background-image:url(Images/index/show_02.jpg);
 }
 li.haodongxi {
-	background-image:url(images/index/show_03.jpg);
+	background-image:url(Images/index/show_03.jpg);
 }
 li.tuangou {
-	background-image:url(images/index/show_04.png);
+	background-image:url(Images/index/show_04.png);
 }
 li.shoufa {
-	background-image:url(images/index/show_05.jpg);
+	background-image:url(Images/index/show_05.jpg);
 }
 li.youhuiquan {
-	background-image:url(images/index/show_06.jpg);
+	background-image:url(Images/index/show_06.jpg);
 }
 li.yushou {
-	background-image:url(images/index/show_07.jpg);
+	background-image:url(Images/index/show_07.jpg);
 }
 li.jinrong {
-	background-image:url(images/index/show_08.jpg);
+	background-image:url(Images/index/show_08.jpg);
 }
 
 /*ÍÅ¹º*/
 #show_box>ul>li>div>div {
-    background:url(images/index/cantuan.png) no-repeat 0px 35px;
+    background:url(Images/index/cantuan.png) no-repeat 0px 35px;
     color: #888;
     margin-top: 20px;
     width: 95px;
