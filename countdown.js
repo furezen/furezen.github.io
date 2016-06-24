@@ -93,7 +93,7 @@ function updateBall(){
             ball[cnt++] = ball[i]
 
 
-    while(ball.length>Math.min(800,cnt)){
+    while(ball.length>Math.min(1200,cnt)){
         ball.pop();
     }    
 
