@@ -1,0 +1,15 @@
+<ion-view>
+      <ion-content>
+      	<div>
+      		<div style="background-color: #D9D9D9;">
+      			<p style="font-weight: 100; margin-left: 5px;;">A</p>
+      		</div>
+      			<div ng-repeat="(k,v) in fMessage" style="border: 1px solid #D1D3D6; height: 50px; position: relative; top: 0px;">
+      		<img src="../www/img/{{v.img}}" width="50px;" style=" position: absolute; top: 5px;"/>
+      		<div style="position: absolute; left: 110px; font-weight: 100;">
+      		<h4 style="font-weight: 100;">{{v.name}}</h4>
+      		</div>
+      	</div>
+      	</div>
+      </ion-content>
+</ion-view>

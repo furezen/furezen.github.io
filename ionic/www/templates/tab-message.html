@@ -1,0 +1,11 @@
+<ion-view>
+      <ion-content>
+      	<div ng-repeat="(k,v) in fMessage" style="border: 1px solid #D1D3D6; height: 80px; position: relative;">
+      		<img src="../www/img/{{v.img}}" width="100px;" style=" position: absolute; top: 5px;"/>
+      		<div style="position: absolute; left: 110px; font-weight: 100;">
+      		<h4 style="font-weight: 100;">{{v.name}}</h4>
+      		<p>{{v.fnew}}</p>
+      		</div>
+      	</div>
+      </ion-content>
+</ion-view>
