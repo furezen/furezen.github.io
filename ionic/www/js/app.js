@@ -54,7 +54,7 @@ $scope.closeNewTask = function(){
 };
 $scope.task={title:""};
 $scope.fMessage = [
-	{name:"李卉",img:'0.JPG',fnew:'我还差你多少东西？'}
+	{name:"ＬＨ",img:'2.PNG',fnew:'我还差你多少东西？'}
 ]
   
 }).config(['$ionicConfigProvider', function($ionicConfigProvider) {
