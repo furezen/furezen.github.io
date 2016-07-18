@@ -56,7 +56,7 @@ $scope.task={title:""};
 $scope.fMessage = [
 	{name:"ＬＨ",img:'2.PNG',fnew:'我还差你多少东西？'}
 ]
-  
+  $scope.task={title:"微信"}
 }).config(['$ionicConfigProvider', function($ionicConfigProvider) {
 
     $ionicConfigProvider.tabs.position('bottom'); // other values: top
