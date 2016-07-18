@@ -4,12 +4,15 @@
       		<div style="background-color: #D9D9D9;">
       			<p style="font-weight: 100; margin-left: 5px;;">Ｌ</p>
       		</div>
-      			<div ng-repeat="(k,v) in fMessage" style="border: 1px solid #D1D3D6; height: 50px; position: relative; top: 0px;">
+      		<ion-item>	
+                        <div ng-repeat="(k,v) in fMessage" style=" height: 50px; position: relative; top: 0px;">
       		<img src="../www/img/{{v.img}}" width="40px;" style=" position: absolute; top: 5px;"/>
       		<div style="position: absolute; left:50px; font-weight: 100;">
       		<h4 style="font-weight: 100;">{{v.name}}</h4>
       		</div>
+
       	</div>
+      </ion-item>
       	</div>
       </ion-content>
 </ion-view>
