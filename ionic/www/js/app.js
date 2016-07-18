@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic','wechat.routes'])
+angular.module('starter', ['ionic','wechat.routes','wechat.controllers'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -61,6 +61,4 @@ $scope.fMessage = [
 
     $ionicConfigProvider.tabs.position('bottom'); // other values: top
 
-}]).controller('messageCtrl',function($scope){
-	$scope.task={title:"微信"}
-})
+}])
