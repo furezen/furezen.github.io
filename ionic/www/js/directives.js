@@ -1,7 +1,7 @@
 angular.module('wechat.directives', [])
-.directive('rjCloseBackDrop', [function() {
+    .directive('rjCloseBackDrop', [function() {
         return {
-            scope: false,//共享父scope
+            scope: false, //共享父scope
             restrict: 'A',
             replace: false,
             link: function(scope, iElm, iAttrs, controller) {
