@@ -1,1 +1,1 @@
-local({"result":"我是远程函数remote"});
+localHandler({"result":"我是远程js带来的数据"});
