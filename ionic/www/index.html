@@ -1,58 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Todo</title>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <head>
+        <meta charset="utf-8">
+        <title>Todo</title>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-   <link href="css/ionic.app.css" rel="stylesheet">
+        <link href="css/ionic.app.css" rel="stylesheet">
 
-    <script src="lib/ionic/js/ionic.bundle.js"></script>
+        <script src="lib/ionic/js/ionic.bundle.js"></script>
 
-    <script type="text/javascript" src="js/app.js"></script>
-    <!-- 在使用 Cordova/PhoneGap 创建的 APP 中包含的文件，由 Cordova/PhoneGap 提供，(开发过程中显示 404) -->
+        <script type="text/javascript" src="js/app.js"></script>
+        <!-- 在使用 Cordova/PhoneGap 创建的 APP 中包含的文件，由 Cordova/PhoneGap 提供，(开发过程中显示 404) -->
 
-    <script src="cordova.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/routes.js"></script>
-    <script src="js/services.js"></script>
-    <script src="js/directives.js"></script>
-  </head>
-  <body ng-app="starter" ng-controller="Gua">
-    <ion-header-bar class="bar-dark">
-       
-          <h1 class="title" ng-model="task.title">{{task.title}}</h1>
-         <!--新增按钮-->
-          <button class="button button-icon" ng-click="newTask()"><i class="icon  ion-ios-plus-empty"></i></button>
+        <script src="cordova.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/routes.js"></script>
+        <script src="js/services.js"></script>
+        <script src="js/directives.js"></script>
+    </head>
+    <body ng-app="starter" ng-controller="Gua">
+        <ion-header-bar class="bar-dark">
+
+            <h1 class="title" ng-model="task.title">{{task.title}}</h1>
+            <!--新增按钮-->
+            <button class="button button-icon" ng-click="newTask()">
+                <i class="icon  ion-ios-plus-empty"></i>
+            </button>
         </ion-header-bar>
         <ion-content scroll="false">
-              <!--list-->
-         
+            <!--list-->
+
         </ion-content>
-    <ion-nav-view>
-      
-    </ion-nav-view>
-    <script type="text/ng-template" id="new-task.html">
-      <div class="modal">
-        <!--modal header bar-->
-        <ion-header-bar ng-class="bar-secondary">
-          <h1 class="title">更改title</h1>
-          <button class="button button-clear button-positive" ng-click="closeNewTask()">cancel</button>
-        </ion-header-bar>
-        <!--modal content area-->
-        <ion-content>
-              <form ng-submit="creatTask(task)">
-                <div class="list">
-                  <label class="item item-input">
-                    <input type="text" placeholder="苟利国家生死以" ng-model="task.title">
-                  </label>
-                </div>
-                <div class="padding">
-                  <button type="submit" class="button button-block button-positive" ng-click="closeNewTask()">Creat Task</button>
-                </div>
-              </form>
-        </ion-content>
-      </div>
-    </script>
-  </body>
+        <ion-nav-view></ion-nav-view>
+        <script type="text/ng-template" id="new-task.html">
+            <div class="modal">
+                <!--modal header bar-->
+                <ion-header-bar ng-class="bar-secondary">
+                    <h1 class="title">更改title</h1>
+                    <button class="button button-clear button-positive" ng-click="closeNewTask()">cancel</button>
+                </ion-header-bar>
+                <!--modal content area-->
+                <ion-content>
+                    <form ng-submit="creatTask(task)">
+                        <div class="list">
+                            <label class="item item-input">
+                                <input type="text" placeholder="苟利国家生死以" ng-model="task.title">
+                            </label>
+                        </div>
+                        <div class="padding">
+                            <button type="submit" class="button button-block button-positive" ng-click="closeNewTask()">Creat Task</button>
+                        </div>
+                    </form>
+                </ion-content>
+            </div>
+        </script>
+    </body>
 </html>

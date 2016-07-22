@@ -5,7 +5,7 @@ angular.module('wechat.directives', [])
             restrict: 'A',
             replace: false,
             link: function(scope, iElm, iAttrs, controller) {
-                //要在html上添加点击事件, 试了很久- -!
+                //要在html上添加点击事件
                 var htmlEl = angular.element(document.querySelector('html'));
                 htmlEl.on("click", function(event) {
                     if (event.target.nodeName === "HTML" &&

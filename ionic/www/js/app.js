@@ -22,7 +22,8 @@ angular.module('starter', ['ionic', 'wechat.routes', 'wechat.controllers', 'wech
         }
     });
 }).controller('Gua', function($scope, $ionicModal) {
-    $scope.tasks = [{
+    // 内容 测试
+    /*$scope.tasks = [{
         title: "人生经验"
     }, {
         title: "https://www.youtube.com"
@@ -30,7 +31,7 @@ angular.module('starter', ['ionic', 'wechat.routes', 'wechat.controllers', 'wech
         title: "西方国家"
     }, {
         title: "https://www.youku.com"
-    }];
+    }];*/
     //载入并创建模型
     $ionicModal.fromTemplateUrl('new-task.html', function(modal) {
         $scope.taskModal = modal;
