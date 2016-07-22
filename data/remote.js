@@ -1,1 +1,1 @@
-local({"result":"我是远程函数remote"})
+local({"result":"我是远程函数remote"});
