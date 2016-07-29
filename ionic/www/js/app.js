@@ -65,7 +65,7 @@ angular.module('starter', ['ionic', 'wechat.routes', 'wechat.controllers', 'wech
         fnew: '我还差你多少东西？'
     }]
     $scope.task = {
-        title: "微信"
+        title: "chat"
     }
 }).config(['$ionicConfigProvider', function($ionicConfigProvider) {
 
