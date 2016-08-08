@@ -1,0 +1,14 @@
+"messages": [{
+  "id":0,
+  "name":"张三",
+  "pic":"img/2.png",
+  "lastMessage":{
+    "time":"2015-10-12 19:58:03",
+    "content":"玩啥呢?",
+    "isFormeMe":false
+  },
+  "noReadMessage":2,
+  "showHints":true,
+  "isTop":0,
+
+  }]

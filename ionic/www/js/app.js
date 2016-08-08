@@ -21,7 +21,7 @@ angular.module('starter', ['ionic', 'wechat.routes', 'wechat.controllers', 'wech
             StatusBar.styleDefault();
         }
     });
-}).controller('Gua', function($scope, $ionicModal) {
+}).controller('Gua', function($scope, $ionicModal, $sce) {
     // 内容 测试
     /*$scope.tasks = [{
         title: "人生经验"
@@ -39,6 +39,36 @@ angular.module('starter', ['ionic', 'wechat.routes', 'wechat.controllers', 'wech
         scope: $scope,
         animation: 'slide-in-up'
     });
+    $ionicModal.fromTemplateUrl('index.html', function(modal) {
+        $scope.proModal = modal;
+    }, {
+        scope: $scope,
+        animation: 'slide-in-up'
+    });
+    $ionicModal.fromTemplateUrl('pdf.html', function(modal) {
+        $scope.pdfModal = modal;
+    }, {
+        scope: $scope,
+        animation: 'slide-in-up'
+    });
+    $ionicModal.fromTemplateUrl('timer.html', function(modal) {
+        $scope.timerModal = modal;
+    }, {
+        scope: $scope,
+        animation: 'slide-in-up'
+    });
+    $ionicModal.fromTemplateUrl('demo.html', function(modal) {
+        $scope.demoModal = modal;
+    }, {
+        scope: $scope,
+        animation: 'slide-in-up'
+    });
+    $ionicModal.fromTemplateUrl('demo2.html', function(modal) {
+        $scope.demo2Modal = modal;
+    }, {
+        scope: $scope,
+        animation: 'slide-in-up'
+    });
     //表单提交时调用
     $scope.createTask = function(task) {
         $scope.task.push({
@@ -49,10 +79,40 @@ angular.module('starter', ['ionic', 'wechat.routes', 'wechat.controllers', 'wech
 
     };
     //打开新增模型
+    $scope.demo = function(){
+      $scope.demoModal.show()
+    };
+    $scope.demo2 = function(){
+      $scope.demo2Modal.show()
+    };
+    $scope.pdf = function(){
+      $scope.pdfModal.show()
+    };
+    $scope.timer = function(){
+      $scope.timerModal.show()
+    };
+    $scope.index = function(){
+      $scope.proModal.show()
+    };
     $scope.newTask = function() {
         $scope.taskModal.show();
     };
     //关闭新模型
+    $scope.closeDemo2 = function(){
+      $scope.demo2Modal.hide()
+    }
+    $scope.closeDemo = function(){
+      $scope.demoModal.hide()
+    }
+    $scope.closePdf = function(){
+      $scope.pdfModal.hide()
+    }
+    $scope.closeTimer = function(){
+      $scope.timerModal.hide()
+    }
+    $scope.closeIndex = function(){
+      $scope.proModal.hide()
+    }
     $scope.closeNewTask = function() {
         $scope.taskModal.hide();
     };
@@ -66,7 +126,14 @@ angular.module('starter', ['ionic', 'wechat.routes', 'wechat.controllers', 'wech
     }]
     $scope.task = {
         title: "chat"
-    }
+    };
+     $scope.indexUrl = $sce.trustAsResourceUrl('../../index1.html');
+     $scope.pdfUrl =  $sce.trustAsResourceUrl('../../pdf/int.pdf');
+     $scope.timerUrl = $sce.trustAsResourceUrl('../../timer.html');
+     $scope.demoUrl =  $sce.trustAsResourceUrl('../../demo.html');
+     $scope.demo2Url =  $sce.trustAsResourceUrl('../../project02/index.html');
+
+
 }).config(['$ionicConfigProvider', function($ionicConfigProvider) {
 
     $ionicConfigProvider.tabs.position('bottom'); // other values: top

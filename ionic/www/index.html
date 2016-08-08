@@ -54,5 +54,56 @@
                 </ion-content>
             </div>
         </script>
+        <script type="text/ng-template" id="index.html">
+            <div class="modal">
+              <ion-header-bar ng-class="bar-secondary">
+          			<h1 class="title">我的项目</h1>
+          			<button class="button button-clear button-positive" ng-click="closeIndex()">cancel</button>
+          		</ion-header-bar>
+          	<ion-content scroll="true" overflow-scroll="true">
+              <iframe ng-src="{{indexUrl}}" style="min-height:100%; width:100%;"></iframe>
+            </div>
+        </script>
+        <script type="text/ng-template" id="pdf.html">
+            <div class="modal">
+              <ion-header-bar ng-class="bar-secondary">
+          			<h1 class="title">个人简历</h1>
+          			<button class="button button-clear button-positive" ng-click="closePdf()">cancel</button>
+          		</ion-header-bar>
+          	<ion-content scroll="true" overflow-scroll="true">
+              <iframe ng-src="{{pdfUrl}}" style="min-height:100%; width:100%;"></iframe>
+            </div>
+        </script>
+        <script type="text/ng-template" id="timer.html">
+            <div class="modal">
+              <ion-header-bar ng-class="bar-secondary">
+          			<h1 class="title">canvas 倒计时</h1>
+          			<button class="button button-clear button-positive" ng-click="closeTimer()">cancel</button>
+          		</ion-header-bar>
+          	<ion-content scroll="true" overflow-scroll="true">
+              <iframe ng-src="{{timerUrl}}" style="min-height:100%; width:100%;"></iframe>
+            </div>
+        </script>
+        <script type="text/ng-template" id="demo.html">
+            <div class="modal">
+              <ion-header-bar ng-class="bar-secondary">
+          			<h1 class="title">网页demo</h1>
+          			<button class="button button-clear button-positive" ng-click="closeDemo()">cancel</button>
+          		</ion-header-bar>
+          	<ion-content scroll="true" overflow-scroll="true">
+              <iframe ng-src="{{demoUrl}}" style="min-height:100%; width:100%;"></iframe>
+            </div>
+        </script>
+        <script type="text/ng-template" id="demo2.html">
+            <div class="modal">
+              <ion-header-bar ng-class="bar-secondary">
+          			<h1 class="title">网页demo</h1>
+          			<button class="button button-clear button-positive" ng-click="closeDemo2()">cancel</button>
+          		</ion-header-bar>
+          	<ion-content scroll="true" overflow-scroll="true">
+              <iframe ng-src="{{demo2Url}}" style="min-height:100%; width:100%;"></iframe>
+            </div>
+        </script>
+
     </body>
 </html>

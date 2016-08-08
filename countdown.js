@@ -71,7 +71,7 @@ function update(){
         curShowTimeSeconds = nextShowTimeSeconds;
     }
     updateBall();
-    console.log(ball.length);
+
 }
 function updateBall(){
     for(var i = 0;i < ball.length ; i++){
