@@ -24,4 +24,7 @@
 }
 .first-list .col .icon{
   font-size: 32px;
-} 
+}
+a{
+  text-decoration: none;
+}

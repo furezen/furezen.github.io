@@ -1,7 +1,7 @@
 //声明模块，在app.js中注入
 angular.module('wechat.routes', []).config(function($stateProvider, $urlRouterProvider) {
     //默认是tabs.messages
-    $urlRouterProvider.otherwise("/tab/message");
+    $urlRouterProvider.otherwise("/tab/setting");
     $stateProvider
     //如果tab状态被激活，加载tab.html模版
         .state('tab', {
@@ -9,6 +9,15 @@ angular.module('wechat.routes', []).config(function($stateProvider, $urlRouterPr
             abstract: true,
             templateUrl: "templates/tabs.html",
 
+        })
+        .state('tab.setting', {
+            url: '/setting',
+            views: {
+                'tab-setting': {
+                    templateUrl: 'templates/tab-setting.html',
+                    //controller: "settingCtrl"
+                }
+            }
         })
         .state('tab.message', {
             url: '/message',
@@ -35,14 +44,6 @@ angular.module('wechat.routes', []).config(function($stateProvider, $urlRouterPr
                 }
             }
         })
-        .state('tab.setting', {
-            url: '/setting',
-            views: {
-                'tab-setting': {
-                    templateUrl: 'templates/tab-setting.html',
-                    //controller: "settingCtrl"
-                }
-            }
-        })
+
 
 })
