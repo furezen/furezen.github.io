@@ -36,22 +36,22 @@ angular.module('wechat.routes', []).config(function($stateProvider, $urlRouterPr
                 }
             }
         })
-        .state('tab.find', {
-            url: '/find',
-            views: {
-                'tab-find': {
-                    templateUrl: 'templates/tab-find.html'
-                }
-            }
-        })
-        .state('tab.project', {
-            url: '/project',
-            views: {
-                'tab-project': {
-                    templateUrl: 'templates/tab-find.html'
-                }
-            }
-        })
+//      .state('tab.find', {
+//          url: '/find',
+//          views: {
+//              'tab-find': {
+//                  templateUrl: 'templates/tab-find.html'
+//              }
+//          }
+//      })
+//      .state('tab.project', {
+//          url: '/project',
+//          views: {
+//              'tab-project': {
+//                  templateUrl: 'templates/tab-find.html'
+//              }
+//          }
+//      })
 
 
 })
