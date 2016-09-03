@@ -1,0 +1,30 @@
+/* Empty. Add your own CSS if you like */
+/*home*/
+.home-slide ion-slide{
+  height: 150px;
+  width: 100%;
+}
+.home-slide ion-slide img {
+  height: 150px;
+  width: 100%;
+}
+/*setting 块布局*/
+.row-h-2{
+  height: 160px;
+
+}
+.c-h-2{
+  height: 144px;
+  padding-top:20%;
+}
+.first-list .col{
+  height: 85px;
+  text-align: center;
+  line-height: 32px;
+}
+.first-list .col .icon{
+  font-size: 32px;
+}
+a{
+  text-decoration: none;
+}

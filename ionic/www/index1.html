@@ -6,17 +6,16 @@
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
         <link href="css/ionic.app.css" rel="stylesheet">
-        <link href="css/style-ionic.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         <script src="lib/ionic/js/ionic.bundle.js"></script>
-        <script src="https://cdnjs.com/libraries/chart.js"></script>
 
         <script type="text/javascript" src="js/app.js"></script>
         <!-- 在使用 Cordova 创建的 APP 中包含的文件，由 Cordova 提供，(开发过程中显示 404) -->
 
-     
+        <script src="cordova.js"></script>
         <script src="js/controllers.js"></script>
         <script src="js/routes.js"></script>
-     
+        <script src="js/services.js"></script>
         <script src="js/directives.js"></script>
     </head>
     <body ng-app="starter" ng-controller="Gua">
@@ -72,7 +71,7 @@
           			<button class="button button-clear button-positive" ng-click="closePdf()">cancel</button>
           		</ion-header-bar>
           	<ion-content scroll="true" overflow-scroll="true">
-              <iframe ng-src="{{pdfUrl}}" style="height:100%; width:100%;"></iframe>
+              <iframe ng-src="{{pdfUrl}}" style="min-height:100%; width:100%;"></iframe>
             </div>
         </script>
         <script type="text/ng-template" id="timer.html">
@@ -82,7 +81,7 @@
           			<button class="button button-clear button-positive" ng-click="closeTimer()">cancel</button>
           		</ion-header-bar>
           	<ion-content scroll="true" overflow-scroll="true">
-              <iframe ng-src="{{timerUrl}}" style="height:100%;"></iframe>
+              <iframe ng-src="{{timerUrl}}" style="min-height:100%; width:100%;"></iframe>
             </div>
         </script>
         <script type="text/ng-template" id="demo.html">
@@ -105,6 +104,6 @@
               <iframe ng-src="{{demo2Url}}" style="min-height:100%; width:100%;"></iframe>
             </div>
         </script>
-		
+
     </body>
 </html>
