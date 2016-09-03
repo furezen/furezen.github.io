@@ -127,7 +127,7 @@ angular.module('starter', ['ionic', 'wechat.routes', 'wechat.controllers', 'wech
     $scope.task = {
         title: "chat"
     };
-     $scope.indexUrl = $sce.trustAsResourceUrl('../../index1.html');
+     $scope.indexUrl = $sce.trustAsResourceUrl('../../index.html');
      $scope.pdfUrl =  $sce.trustAsResourceUrl('../../pdf/int.pdf');
      $scope.timerUrl = $sce.trustAsResourceUrl('../../timer.html');
      $scope.demoUrl =  $sce.trustAsResourceUrl('../../demo.html');
