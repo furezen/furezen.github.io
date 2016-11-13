@@ -2,7 +2,7 @@ $(document).ready(function() {
   //提示：已经在页面导航部分的Settings中的JavaScript部分引入了wildog.js和jquery.js
   //在www.wildog.com 注册一个账号，创建一个应用，自动生成一个url,替换下边url即可
   var config = {
-    syncURL: "https://<appId>.wilddogio.com" //输入节点 URL
+    syncURL: "http://furezen.wilddogio.com" //输入节点 URL
   };
   wilddog.initializeApp(config);
   var ref = wilddog.sync().ref();
