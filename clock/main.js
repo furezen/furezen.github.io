@@ -1,6 +1,5 @@
 $(document).ready(function() {
-  //提示：已经在页面导航部分的Settings中的JavaScript部分引入了wildog.js和jquery.js
-  //在www.wildog.com 注册一个账号，创建一个应用，自动生成一个url,替换下边url即可
+  
   var config = {
     syncURL: "http://furezen.wilddogio.com" //输入节点 URL
   };
@@ -8,25 +7,25 @@ $(document).ready(function() {
   var ref = wilddog.sync().ref();
   //var ref = new Wilddog("https://furezen.wilddogio.com");
   var arr = [];
-  //把数据提交到野狗云
+  //把数据提交到服务器
   $(".s_sub").click(function() {
     var text = $(".s_txt").val();
     ref.child('message').push(text);
     $(".s_txt").val('');
   });
-  //响应按键点击事件
+  //响应按键点击
   $(".s_txt").keypress(function(event) {
     if (event.keyCode == "13") {
       $(".s_sub").trigger('click');
     }
   });
-  //响应按键清除事件
+  //响应按键清除
   $(".s_del").click(function() {
     ref.remove();
     arr = [];
     $('.dm_show').empty();
   });
-  //监听云端数据变更，云端数据变化，弹幕框里数据也跟着变化。
+  //监听云端数据变更，云端数据变化，弹幕框里数据也变化。
   ref.child('message').on('child_added', function(snapshot) {
     var text = snapshot.val();
     arr.push(text);
