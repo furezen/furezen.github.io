@@ -908,3 +908,15 @@ div.modal{
 div.res{
   text-align: center;
 }
+div.event{
+  text-align: center;
+  margin-bottom: 20px;
+}
+div.data{
+  text-align: center;
+
+}
+div.quickevent{
+  text-align: center;
+  margin-bottom: 20px;
+}
