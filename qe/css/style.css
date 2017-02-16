@@ -275,13 +275,9 @@ header{
         left: 20px;
     }
 
-    .default-menu.navbar-default .navbar-nav > li:last-child > a{
-        padding-left: 20px !important;
-    }
+   
 
-    .default-menu.navbar-default .navbar-nav > li:first-child > a{
-       
-    }
+   
 }
 
 .default-menu.menu-4{
@@ -578,7 +574,7 @@ header{
     color: #25AFEC;
 }
 
-.extra-feature p{;
+.extra-feature p{
     margin-bottom: 30px;
 }
 
