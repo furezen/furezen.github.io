@@ -99,39 +99,39 @@ function getDaysInMonth(month) {
 
 function timeElapse(date, mode) {
 	var current = new Date();
-	var years = NaN;
-	var months = NaN;
-	var days = NaN;
-	var hours = NaN;
-	var minutes = NaN;
-	var seconds = NaN;
-	seconds = current.getSeconds() - date.getSeconds();
+	var years = 2020;
+	var months = 10;
+	var days = 29;
+	var hours = 10;
+	var minutes = 57;
+	var seconds = 03;
+	seconds = 0 - date.getSeconds();
 	if (seconds < 0) {
 		seconds += 60;
 		current.setMinutes(current.getMinutes() - 1);
 	}
-	minutes = current.getMinutes() - date.getMinutes();
+	minutes = 57 - date.getMinutes();
 	if (minutes < 0) {
 		minutes += 60;
 		current.setHours(current.getHours() - 1);
 	}
-	hours = current.getHours() - date.getHours();
+	hours = 10 - date.getHours();
 	if (hours < 0) {
 		hours += 24;
 		current.setDate(current.getDate() - 1);
 	}
 	if (mode == 1) {
-		days = current.getDate() - date.getDate();
+		days = 29 - date.getDate();
 		if (days < 0) {
 			days += getDaysInMonth(current.getMonth());
 			current.setDate(current.getDate() - 1);
 		}
-		months = current.getMonth() - date.getMonth();
+		months = 10 - date.getMonth();
 		if (months < 0) {
 			months += 12;
 			current.setYear(current.getFullYear() - 1);
 		}
-		years = current.getFullYear() - date.getFullYear();
+		years = 2020 - date.getFullYear();
 	} else {
 		days = Math.floor((current.getTime() - date.getTime()) / (1000 * 3600 * 24));
 	}
